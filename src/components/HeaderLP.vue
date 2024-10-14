@@ -11,13 +11,13 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <router-link class="nav-link text-warning" to="#">Sobre nós</router-link>
+              <a class="nav-link text-warning" href="#about">Sobre nós</a>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link text-warning" to="#">Serviços</router-link>
+              <a class="nav-link text-warning" href="#services">Serviços</a>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link text-warning" to="#">Benefícios</router-link>
+              <a class="nav-link text-warning" href="#benefits">Benefícios</a>            
             </li>
           </ul>
         </div>
@@ -28,22 +28,19 @@
 
 <script setup>
 
-const solicitarPrototipo = () => {
-  // Implementar a lógica para solicitar o protótipo
-  console.log('Solicitação de protótipo iniciada')
-  // Por exemplo, navegar para uma página de formulário:
-  // router.push('/solicitar-prototipo')
-}
 </script>
 
 <style scoped>
 .bg-gradient {
+  backdrop-filter: blur(2px);
   background: linear-gradient(180deg, rgba(179, 179, 179, 0.54) 0%, rgba(39, 39, 39, 0.45) 73.4%, rgba(0, 0, 0, 0.09) 100%),
 linear-gradient(0deg, rgba(41, 41, 41, 0.17), rgba(41, 41, 41, 0.17)) !important;
 
 }
 .navbar-nav .nav-link {
   transition: color 0.3s ease;
+  font-size: 20px;
+  margin: 0px 10px;
 }
 
 .navbar-nav .nav-link:hover {
