@@ -1,5 +1,5 @@
 <template>
-  <main class="container-fluid herolp">
+  <main class="container-md herolp">
     <div class="row">
       <div class="col-lg-12 align-self-left">
         <img src="../assets/images/logo.png" alt="Logo" height="123" class="d-inline-block align-text-top mb-3">

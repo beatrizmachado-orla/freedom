@@ -18,12 +18,26 @@ import FooterLP from './components/FooterLP.vue';
 
 <style scoped>
 .info {
+  animation: bgtransition 6s infinite alternate;
   background-image: url("../src/assets/images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(51, 54, 2, 0.219);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
 }
 .navbar-nav .nav-link:hover {
   color: #ffffff !important;
+}
+
+@keyframes bgtransition {
+  0% {
+    background-color: rgb(0, 0, 0);
+  }
+  100% {
+    background-color: rgb(0, 21, 41);
+  }
 }
 </style>
