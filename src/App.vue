@@ -3,6 +3,7 @@ import HeaderLP from './components/HeaderLP.vue'
 import HeroLP from './components/HeroLP.vue'
 import Video from './components/Video.vue'
 import Products from './components/Products.vue';
+import FooterLP from './components/FooterLP.vue';
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import Products from './components/Products.vue';
     <Video/>
     <Products/>
   </div>
+  <FooterLP/>
 </template>
 
 <style scoped>
