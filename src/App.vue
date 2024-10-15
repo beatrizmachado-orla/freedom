@@ -16,10 +16,12 @@ import Products from './components/Products.vue';
 
 <style scoped>
 .info {
-  background-image: url(../assets/images/ai-face.png);
+  background-image: url("../src/assets/images/background.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top right;
-
+  background-size: cover;
+  background-color: rgba(51, 54, 2, 0.219);
+}
+.navbar-nav .nav-link:hover {
+  color: #ffffff !important;
 }
 </style>

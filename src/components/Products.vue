@@ -55,48 +55,22 @@
 
 <style scoped>
 .section-title {
-  color: #ffc107; /* Cor amarela */
+  color: #ffc107;
   font-size: 2rem;
   font-weight: bold;
 }
 
 .card {
-  background-color: rgba(0, 0, 0, 0.041);
-  border: 1px solid #444;
-  border-radius: 10px;
-  overflow: hidden;
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0.096) 0%, rgba(0,0,0,0) 100%);
+  border: 1px solid #3F3F3F;
+  border-radius: 50px;
+  backdrop-filter: blur(2px);
 }
 
 .card-title {
-  color: #ffc107;
+  color: #fff;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.icon-grid {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.icon-grid img {
-  width: 40px;
-  height: 40px;
-}
-
-.prompt-card {
-  background-color: #1b1b1b;
-  border: 1px solid #444;
-  padding: 15px;
-  border-radius: 10px;
-}
-
-.prompt-card h5 {
-  color: #ffc107;
-}
-
-.prompt-card ul li {
-  color: #fff;
-  margin-bottom: 5px;
-}
 </style>

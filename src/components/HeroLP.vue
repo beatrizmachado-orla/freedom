@@ -33,20 +33,12 @@ const solicitarPrototipo = () => {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top right;
-  height: 100vh;
+  height: 75vh;
   display: flex;
   align-items: center;
   justify-content: start;
-  padding: 10%
+  padding: 3rem
 }
-.navbar-nav .nav-link {
-  transition: color 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #ffc107 !important;
-}
-
 .btn-warning:hover {
   background-color: #e0a800;
 }

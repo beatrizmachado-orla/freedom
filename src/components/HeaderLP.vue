@@ -35,19 +35,11 @@
   backdrop-filter: blur(2px);
   background: linear-gradient(180deg, rgba(179, 179, 179, 0.54) 0%, rgba(39, 39, 39, 0.45) 73.4%, rgba(0, 0, 0, 0.09) 100%),
 linear-gradient(0deg, rgba(41, 41, 41, 0.17), rgba(41, 41, 41, 0.17)) !important;
-
 }
 .navbar-nav .nav-link {
-  transition: color 0.3s ease;
+  transition: all 1s ease;
   font-size: 20px;
   margin: 0px 10px;
 }
 
-.navbar-nav .nav-link:hover {
-  color: #ffc107 !important;
-}
-
-.btn-warning:hover {
-  background-color: #e0a800;
-}
 </style>
