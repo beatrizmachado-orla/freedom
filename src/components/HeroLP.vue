@@ -33,7 +33,7 @@ const solicitarPrototipo = () => {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top right;
-  height: 75vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: start;
