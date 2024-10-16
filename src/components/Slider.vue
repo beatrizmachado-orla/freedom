@@ -37,25 +37,25 @@ export default {
     return {
       images: [
         {
-          src:"/src/assets/images/centralizacaodeias.png",
+          src:"../src/assets/images/centralizacaodeias.png",
           title: "Centralização de IAs",
           description: "",
-          videoSrc: "/src/assets/videos/ia.mp4"
+          videoSrc: "../src/assets/videos/ia.mp4"
         },
         {
-          src: "/src/assets/images/humanodigital.png",
+          src: "../src/assets/images/humanodigital.png",
           title: "Humano digital",
           description: "",
-          videoSrc: "/src/assets/videos/ia2.mp4"
+          videoSrc: "../src/assets/videos/ia2.mp4"
         },
         {
-          src: "/src/assets/images/Prompts.png",
+          src: "../src/assets/images/Prompts.png",
           title: "Prompts",
           description: "",
-          videoSrc: "/src/assets/videos/ia.mp4"
+          videoSrc: "../src/assets/videos/ia.mp4"
         }
       ],
-      selectedVideo: "/src/assets/videos/ia.mp4", // vídeo inicial
+      selectedVideo: "../src/assets/videos/ia.mp4", // vídeo inicial
       selectedImage: 0 // imagem inicial selecionada
     };
   },

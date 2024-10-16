@@ -22,7 +22,7 @@ import Empresas from './components/Empresas.vue';
 
 <style scoped>
 .info {
-  background-image: url("../src/assets/images/background.png");
+  background-image: url("./assets/images/background.png");
   background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
