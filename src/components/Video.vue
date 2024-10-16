@@ -4,8 +4,8 @@
         <p class="h1 text-warning title">O que é a <span class="text-white">Freedom</span>?</p>
         <p class="text-white h6 subtitle font-weight-light mb-5">A Freedom é uma empresa de inteligência artificial focada em democratizar o acesso à IA, oferecendo soluções para criatividade e produtividade. Lideramos a transformação para que empresas e profissionais tenham acesso fácil e personalizado às melhores soluções de IA.</p>
       </div>
-      <video width="100%" ref="videoPlayer" controls style="border-radius: 18px;">
-        <source src="../src/assets/videos/ia.mp4" type="video/mp4" />
+      <video width="100%" ref="videoPlayer" controls autoplay loop style="border-radius: 18px;">
+        <source src="../assets/videos/ia.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
