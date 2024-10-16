@@ -56,7 +56,6 @@ export default {
 .section-title {
   color: #ffc107;
   font-size: 1.5rem;
-  font-weight: bold;
   text-align: center;
 }
 </style>

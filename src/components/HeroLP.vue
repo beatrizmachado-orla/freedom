@@ -2,7 +2,7 @@
   <main class="container-md herolp">
     <div class="row">
       <div class="col-lg-12 align-self-left">
-        <img src="../assets/images/logo.png" alt="Logo" height="123" class="d-inline-block align-text-top mb-3">
+        <img src="../assets/images/logo.png" alt="Logo" height="100vw" class="d-inline-block align-text-top mb-3">
         <p class="lead mb-4 text-white text-hero mb-5">
           Inteligência Artificial acessível para revolucionar sua <span style="color:#ffc107">criatividade</span> e <span style="color:#ffc107">produtividade</span>
         </p>
@@ -27,12 +27,13 @@ const solicitarPrototipo = () => {
 <style scoped>
 .text-hero {
   font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
 }
 .herolp{
   background-image: url(../assets/images/ai-face.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top right;
+  background-position: center right;
   height: 100vh;
   display: flex;
   align-items: center;

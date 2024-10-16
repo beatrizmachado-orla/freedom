@@ -23,7 +23,7 @@
             class="image"
           />
           <div class="image-overlay">
-            <h3>{{ image.title }}</h3>
+            <h3 class="image-title">{{ image.title }}</h3>
           </div>
         </div>
       </div>
@@ -43,13 +43,13 @@ export default {
           videoSrc: "/src/assets/videos/ia.mp4"
         },
         {
-          src: "/src/assets/videos/humanodigital.png",
+          src: "/src/assets/images/humanodigital.png",
           title: "Humano digital",
           description: "",
           videoSrc: "/src/assets/videos/ia2.mp4"
         },
         {
-          src: "/src/assets/videos/Prompts.png",
+          src: "/src/assets/images/Prompts.png",
           title: "Prompts",
           description: "",
           videoSrc: "/src/assets/videos/ia.mp4"
@@ -87,8 +87,11 @@ export default {
 
 .image-card {
   position: relative;
-  margin-bottom: 15px;
+  margin: 15px;
   cursor: pointer;
+}
+.image-title{
+  font-size: 1.2rem;
 }
 
 .image-overlay {
@@ -103,6 +106,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 
 .image-card:hover{
@@ -112,6 +116,7 @@ export default {
 
 .image {
   width: 100%;
+  border-radius: 10px;
 }
 
 .image.active-image {
