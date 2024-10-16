@@ -39,21 +39,21 @@ export default {
     return {
       produtos: [
         {
-          src:"../src/assets/images/humanodigital.png",
+          src:"../assets/images/humanodigital.png",
           title: "Humanos Digitais",
           Vantagem1: "Defina gênero, etnia e características para refletir sua identidade.",
           Vantagem2: "Escolha roupas, voz e expressões que representem a personalidade.",
           Vantagem3: "Determine a missão do avatar e crie diálogos que se adequem a seu público.",
         },
         {
-          src: "../src/assets/images/centralizacaodeias.png",
+          src: "../assets/images/centralizacaodeias.png",
           title: "Centralização de IAs",
           Vantagem1: "Crie conteúdos, imagens e faça pesquisas através de ferramentas unificadas.",
           Vantagem2: "Escolha roupas, voz e expressões que representem a personalidade.",
           Vantagem3: "Deixe seu trabalho automatizado por múltiplas IAs tornando o fluxo eficiente.",
         },
         {
-          src: "../src/assets/images/Prompts.png",
+          src: "../assets/images/Prompts.png",
           title: "Promps de Produtividade",
           Vantagem1: "Escolha um tema para gerar o conteúdo desejado.",
           Vantagem2: "Conteúdos para artigos, educação, saúde, marketing e muito mais.",
