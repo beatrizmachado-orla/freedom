@@ -5,13 +5,15 @@ import Video from './components/Video.vue'
 import Products from './components/Products.vue';
 import FooterLP from './components/FooterLP.vue';
 import Slider from './components/Slider.vue';
+import Empresas from './components/Empresas.vue';
 </script>
 
 <template>
-  <HeaderLP msg="Primeira Configuração" />
+  <HeaderLP/>
   <HeroLP />
   <div class="info">
     <Video/>
+    <Empresas/>
     <Products/>
     <Slider/>
   </div>
@@ -20,8 +22,8 @@ import Slider from './components/Slider.vue';
 
 <style scoped>
 .info {
-  animation: bgtransition 6s infinite alternate;
   background-image: url("../src/assets/images/background.png");
+  background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
@@ -32,14 +34,5 @@ import Slider from './components/Slider.vue';
 }
 .navbar-nav .nav-link:hover {
   color: #ffffff !important;
-}
-
-@keyframes bgtransition {
-  0% {
-    background-color: rgb(0, 0, 0);
-  }
-  100% {
-    background-color: rgb(0, 21, 41);
-  }
 }
 </style>

@@ -1,19 +1,30 @@
 <template>
-  <div class="slider-container">
-    <!-- Seção de vídeo -->
-    <div class="video-section">
-      <video autoplay loop muted>
-        <source src="../assets/images/ia.mp4" type="video/mp4" />
-        Seu navegador não suporta o vídeo.
-      </video>
-    </div>
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Coluna do vídeo -->
+      <div class="col-9 video-container">
+        <video width="100%" ref="videoPlayer" autoplay loop style="border-radius: 18px;">
+          <source :src="selectedVideo" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
-    <!-- Seção de slides -->
-    <div class="slides-section">
-      <div class="d-flex flex-column justify-content-between">
-        <div class="slide-item" v-for="(slide, index) in slides" :key="index">
-          <h3>{{ slide.title }}</h3>
-          <p>{{ slide.description }}</p>
+      <!-- Coluna das imagens clicáveis com títulos e descrições -->
+      <div class="col-3 images-container">
+        <div
+          v-for="(image, index) in images"
+          :key="index"
+          class="image-card"
+          @click="selectVideo(index)"
+          :class="{ 'active-image': selectedImage === index }"
+        >
+          <img
+            :src="image.src"
+            class="image"
+          />
+          <div class="image-overlay">
+            <h3>{{ image.title }}</h3>
+          </div>
         </div>
       </div>
     </div>
@@ -24,77 +35,91 @@
 export default {
   data() {
     return {
-      currentIndex: 0,
-      slides: [
-        { title: "Centralização de IAs", description: "Claude, Bing, ChatGPT" },
-        { title: "Humano Digital", description: "Os melhores Prompts disponíveis" },
-        { title: "Prompts", description: "Os melhores Prompts disponíveis" }
-      ]
+      images: [
+        {
+          src:"/src/assets/images/centralizacaodeias.png",
+          title: "Centralização de IAs",
+          description: "",
+          videoSrc: "/src/assets/videos/ia.mp4"
+        },
+        {
+          src: "/src/assets/videos/humanodigital.png",
+          title: "Humano digital",
+          description: "",
+          videoSrc: "/src/assets/videos/ia2.mp4"
+        },
+        {
+          src: "/src/assets/videos/Prompts.png",
+          title: "Prompts",
+          description: "",
+          videoSrc: "/src/assets/videos/ia.mp4"
+        }
+      ],
+      selectedVideo: "/src/assets/videos/ia.mp4", // vídeo inicial
+      selectedImage: 0 // imagem inicial selecionada
     };
   },
+  methods: {
+    selectVideo(index) {
+      this.selectedImage = index;
+      this.selectedVideo = this.images[index].videoSrc;
+      this.$refs.videoPlayer.load();
+    }
+  }
 };
 </script>
 
 <style scoped>
-.slider-container {
+
+.video-container {
+  padding: 10px;
+}
+
+.images-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #0d0d0d;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 20px;
+  background:#FFFFFF0A;
+  border: 1px solid #3F3F3F;
   padding: 20px;
-  border-radius: 10px;
 }
 
-.video-section {
-  flex: 3;
-  margin-right: 20px;
-}
-
-.video-section video {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.slides-section {
-  flex: 1;
+.image-card {
   position: relative;
-  overflow: hidden;
-}
-
-.slide-wrapper {
-  display: flex;
-  transition: transform 0.3s ease;
-  width: 300%;
-}
-
-.slide-item {
-  flex: 1;
-  padding: 20px;
-  background-color: #212121;
-  color: #fff;
-  text-align: center;
-  border-radius: 10px;
-  justify-content: space-between;
-  margin: 20px 0px;
-}
-
-.controls {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-
-button {
-  background-color: #f0ad4e;
-  color: white;
-  border: none;
-  padding: 10px 20px;
+  margin-bottom: 15px;
   cursor: pointer;
-  border-radius: 5px;
 }
 
-button:disabled {
-  background-color: #ddd;
-  cursor: not-allowed;
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.295); /* Fundo escuro com opacidade */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-card:hover{
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+
+.image {
+  width: 100%;
+}
+
+.image.active-image {
+  transform: scale(1.1);
+}
+
+h3, p {
+  margin: 0;
+  text-align: center;
 }
 </style>

@@ -1,76 +1,111 @@
 <template>
   <div id="products" class="container">
-    <h2 class="section-title mb-5">Produtos da Freedom</h2>
+    <h2 class="section-title mb-5">Produtos da <span style="color:#fff">Freedom</span></h2>
 
     <!-- Humanos Digitais -->
-    <div class="card mb-5 text-white">
-      <div class="row g-0">
-        <div class="col-md-6">
-          <img src="../assets/images/woman.png" class="img-fluid rounded-start" alt="Humanos Digitais">
+    <div class="mb-5 text-white" v-for="(produto, index) in produtos" :key="index">
+      <div class="vantagens">
+        <div class="col-md-7">
+          <img :src="produto.src" class="vantagem-image rounded-start" alt="Humanos Digitais">
         </div>
-        <div class="col-md-6 d-flex align-items-center">
-          <div class="card-body">
-            <h5 class="card-title">Humanos Digitais</h5>
-            <p class="card-text">Soluções personalizadas de humanos digitais para vídeos e treinamentos.</p>
+        <div class="col-md-5">
+          <div class="vantagem-card">
+            <img class="check-icon" src="/src/assets/icons/check.png">
+            <div class="vantvantagem-body">
+              <h5 class="vantvantagem-title">{{produto.Vantagem1}}</h5>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Centralização de IAs -->
-    <div class="card mb-5 text-white">
-      <div class="row g-0 flex-row-reverse">
-        <div class="col-md-6">
-          <img src="../assets/images/ias.png" class="img-fluid rounded-start" alt="Centralização de IAs">
-        </div>
-        <div class="col-md-6 d-flex align-items-center">
-          <div class="card-body">
-            <h5 class="card-title">Centralização de IAs</h5>
-            <p class="card-text">Acesse e compare diferentes IAs, e use a Freedom para encontrar a solução mais adequada para suas necessidades.</p>
+          <div class="vantagem-card">
+            <img class="check-icon" src="/src/assets/icons/check.png">
+            <div class="vantvantagem-body">
+              <h5 class="vantvantagem-title">{{produto.Vantagem2}}</h5>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Prompts de Produtividade -->
-    <div class="card mb-5 text-white">
-      <div class="row g-0">
-        <div class="col-md-6">
-          <img src="../assets/images/bestPrompts.png" alt="" width="100%" height="100%" class="img-fluid rounded-start">
-        </div>
-        <div class="col-md-6 d-flex align-items-center">
-          <div class="card-body">
-            <h5 class="card-title">Prompts de Produtividade</h5>
-            <p class="card-text">Acesse e compare diferentes IAs, e use a Freedom para encontrar a solução mais adequada para suas necessidades.</p>
+          <div class="vantagem-card">
+            <img class="check-icon" src="/src/assets/icons/check.png">
+            <div class="vantvantagem-body">
+              <h5 class="vantvantagem-title">{{produto.Vantagem3}}</h5>
+            </div>
           </div>
+          
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script setup>
-// No additional script setup needed for this component
+<script>
+export default {
+  data() {
+    return {
+      produtos: [
+        {
+          src:"/src/assets/images/centralizacaodeias.png",
+          title: "Humanos Digitais",
+          Vantagem1: "Defina gênero, etnia e características para refletir sua identidade.",
+          Vantagem2: "Escolha roupas, voz e expressões que representem a personalidade.",
+          Vantagem3: "Determine a missão do avatar e crie diálogos que se adequem a seu público.",
+        },
+        {
+          src: "/src/assets/images/humanodigital.png",
+          title: "Centralização de IAs",
+          Vantagem1: "Crie conteúdos, imagens e faça pesquisas através de ferramentas unificadas.",
+          Vantagem2: "Escolha roupas, voz e expressões que representem a personalidade.",
+          Vantagem3: "Deixe seu trabalho automatizado por múltiplas IAs tornando o fluxo eficiente.",
+        },
+        {
+          src: "/src/assets/images/Prompts.png",
+          title: "Promps de Produtividade",
+          Vantagem1: "Escolha um tema para gerar o conteúdo desejado.",
+          Vantagem2: "Conteúdos para artigos, educação, saúde, marketing e muito mais.",
+          Vantagem3: "Salve e organize os melhores prompts para usar quando quiser.",
+
+        }
+      ],
+    };
+  }
+}
 </script>
 
 <style scoped>
 .section-title {
   color: #ffc107;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
+  text-align: center;
 }
-
-.card {
-  background: linear-gradient(-90deg, rgba(158, 157, 157, 0.144) 0%, rgba(0,0,0,0) 100%);
+.check-icon {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+.vantagens{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vantagem-card {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 32px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background:#FFFFFF0A;
   border: 1px solid #3F3F3F;
-  border-radius: 50px;
-  backdrop-filter: blur(2px);
 }
-
-.card-title {
+.vantagem-body{
+  font-size: 18px;
+}
+.vantagem-title {
   color: #fff;
   font-size: 1.5rem;
   font-weight: bold;
+}
+.vantagem-image{
+  width: 100%;
+  padding: 20px;
 }
 
 </style>
