@@ -6,6 +6,7 @@ import Products from './components/Products.vue';
 import FooterLP from './components/FooterLP.vue';
 import Slider from './components/Slider.vue';
 import Empresas from './components/Empresas.vue';
+import Produtividade from './components/Produtividade.vue';
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import Empresas from './components/Empresas.vue';
     <Video/>
     <Empresas/>
     <Products/>
+    <Produtividade/>
     <Slider/>
   </div>
   <FooterLP/>
