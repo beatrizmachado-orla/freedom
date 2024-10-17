@@ -8,6 +8,7 @@ import Slider from './components/Slider.vue';
 import Empresas from './components/Empresas.vue';
 import Produtividade from './components/Produtividade.vue';
 import Consultoria from './components/Consultoria.vue';
+import Depoimentos from './components/Depoimentos.vue';
 </script>
 
 <template>
@@ -20,6 +21,7 @@ import Consultoria from './components/Consultoria.vue';
     <Produtividade/>
     <Slider/>
     <Consultoria/>
+    <Depoimentos/>
   </div>
   <FooterLP/>
 </template>

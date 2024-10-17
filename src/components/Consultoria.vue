@@ -1,16 +1,17 @@
 <template>
-  <div class="section-consultoria col text-white">
-    <p class="title-section">Consultoria personalizada</p>
-    <p class="subtitle-section">Empresas que adotam tecnologias avançadas não apenas se destacam, mas também lideram o mercado. A inteligência artificial é a chave para otimizar processos, aumentar a eficiência e impulsionar a inovação. A Freedom está aqui para ajudar a impulsionar a sua empresa a transformar desafios em oportunidades através de uma consultoria personalizada.</p>
+  <div class="container">
+    <div class="section-consultoria col text-white">
+        <p class="title-section">Consultoria personalizada</p>
+        <p class="subtitle-section">Empresas que adotam tecnologias avançadas não apenas se destacam, mas também lideram o mercado. A inteligência artificial é a chave para otimizar processos, aumentar a eficiência e impulsionar a inovação. A Freedom está aqui para ajudar a impulsionar a sua empresa a transformar desafios em oportunidades através de uma consultoria personalizada.</p>
+      </div>
+      <div class="row">
+        <div class="col card text-white" v-for="(card, index) in cards" :key="index">
+          <img :src="card.img" alt="" srcset="">
+          <div class="title">{{card.title}}</div>
+          <div class="description">{{card.description}}</div>
+        </div>
+      </div>
   </div>
-  <div class="row">
-    <div class="col card text-white" v-for="(card, index) in cards" :key="index">
-      <img :src="card.img" alt="" srcset="">
-      <div class="title">{{card.title}}</div>
-      <div class="description">{{card.description}}</div>
-    </div>
-  </div>
-  <div class="row"></div>
 </template>
 
 <script>
