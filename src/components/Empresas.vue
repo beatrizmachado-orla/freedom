@@ -6,7 +6,6 @@
         <div v-for="(empresa, index) in empresas" :key="index" class="empresa-card">
           <img :src="empresa.src" class="image" :alt="empresa.title" />
         </div>
-        <!-- Repetir logos para o efeito de looping -->
         <div v-for="(empresa, index) in empresas" :key="'repeat-' + index" class="empresa-card">
           <img :src="empresa.src" class="image" :alt="empresa.title" />
         </div>
@@ -56,7 +55,7 @@ export default {
   overflow: hidden;
   width: 100%;
   height: 100px;
-  margin: 0 auto;
+  margin: 70px auto;
   justify-items: center;
   align-items: center;
   align-content: center;

@@ -7,6 +7,7 @@ import FooterLP from './components/FooterLP.vue';
 import Slider from './components/Slider.vue';
 import Empresas from './components/Empresas.vue';
 import Produtividade from './components/Produtividade.vue';
+import Consultoria from './components/Consultoria.vue';
 </script>
 
 <template>
@@ -18,6 +19,7 @@ import Produtividade from './components/Produtividade.vue';
     <Products/>
     <Produtividade/>
     <Slider/>
+    <Consultoria/>
   </div>
   <FooterLP/>
 </template>

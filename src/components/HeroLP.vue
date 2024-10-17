@@ -29,16 +29,16 @@ const solicitarPrototipo = () => {
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
 }
-.herolp{
+.herolp {
   background-image: url(../assets/images/ai-face.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center right;
+  background-position: calc(100% + 50px) center;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: start;
-  padding: 3rem
+  padding: 3rem;
 }
 .btn-warning:hover {
   background-color: #e0a800;
