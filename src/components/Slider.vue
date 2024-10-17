@@ -1,15 +1,12 @@
 <template>
   <div class="container">
     <div class="row align-items-center">
-      <!-- Coluna do vídeo -->
       <div class="col-9 video-container">
-        <video width="100%" ref="videoPlayer" autoplay loop style="border-radius: 18px;">
+        <video width="100%" ref="videoPlayer" autoplay loop>
           <source :src="selectedVideo" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
-
-      <!-- Coluna das imagens clicáveis com títulos e descrições -->
       <div class="col-3 images-container">
         <div
           v-for="(image, index) in images"
@@ -70,9 +67,10 @@ export default {
 </script>
 
 <style scoped>
-
-.video-container {
-  padding: 10px;
+.video-container video {
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
 }
 
 .images-container {
@@ -82,7 +80,10 @@ export default {
   border-radius: 20px;
   background:#FFFFFF0A;
   border: 1px solid #3F3F3F;
-  padding: 20px;
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 10px;
+  gap: 10px;
 }
 
 .image-card {
