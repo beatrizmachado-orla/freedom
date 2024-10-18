@@ -105,6 +105,7 @@ export default {
   padding: 40px;
   gap: 13px;
   border-radius: 30px;
+  background:#FFFFFF0A !important;
   border: 1px solid #3F3F3F;
   backdrop-filter: blur(2px);
   transition: transform 0.5s ease;

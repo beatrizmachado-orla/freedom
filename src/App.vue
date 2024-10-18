@@ -9,6 +9,7 @@ import Empresas from './components/Empresas.vue';
 import Produtividade from './components/Produtividade.vue';
 import Consultoria from './components/Consultoria.vue';
 import Depoimentos from './components/Depoimentos.vue';
+import Faq from './components/Faq.vue';
 import testes from './components/testes.vue';
 </script>
 
@@ -23,6 +24,7 @@ import testes from './components/testes.vue';
     <Slider/>
     <Consultoria/>
     <Depoimentos/>
+    <Faq/>
   </div>
   <FooterLP/>
 </template>
