@@ -9,6 +9,7 @@ import Empresas from './components/Empresas.vue';
 import Produtividade from './components/Produtividade.vue';
 import Consultoria from './components/Consultoria.vue';
 import Depoimentos from './components/Depoimentos.vue';
+import testes from './components/testes.vue';
 </script>
 
 <template>
