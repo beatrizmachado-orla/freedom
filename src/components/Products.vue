@@ -1,5 +1,5 @@
 <template>
-  <div id="products" class="container">
+  <div id="products" class="container-fluid">
     <h2 class="section-title mb-5">Produtos da <span style="color:#fff">Freedom</span></h2>
 
     <div class="vantagem" v-for="(produto, index) in produtos" :key="index">
@@ -67,6 +67,9 @@ export default {
 </script>
 
 <style scoped>
+.container-fluid{
+  padding: 0 5vw;
+}
 .vantagem{
   display: flex;
   justify-content: space-between;

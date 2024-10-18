@@ -1,5 +1,5 @@
 <template>
-  <div class="container mb-5">
+  <div class="container-fluid mb-5">
     <h2 class="section-title mb-5">Empresas que já usam IA</h2>
     <div class="carousel">
       <div class="carousel-track">

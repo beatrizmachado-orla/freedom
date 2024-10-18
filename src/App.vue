@@ -35,7 +35,7 @@ import testes from './components/testes.vue';
     url("./assets/images/bg/Gradiente.png"),
     url("./assets/images/bg/Verde.png"),
     url("./assets/images/bg/Amarelo.png");
-  background-position: top;
+  background-position: top;;
   background-repeat: no-repeat;
   background-size: 100%;
   align-items: center;

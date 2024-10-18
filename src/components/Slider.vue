@@ -1,26 +1,32 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row align-items-center">
-      <div class="col-9 video-container">
-        <video width="100%" ref="videoPlayer" autoplay loop>
-          <source :src="selectedVideo" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <div class="text-video">
+        <p class="title">Como nossos produtos funcionam?</p>
+        <p class="subtitle">Veja aqui, na prática, como é rápido e fácil explorar nossos produtos.</p>
       </div>
-      <div class="col-3 images-container">
-        <div
-          v-for="(image, index) in images"
-          :key="index"
-          class="image-card"
-          @click="selectVideo(index)"
-          :class="{ 'active-image': selectedImage === index }"
-        >
-          <img
-            :src="image.src"
-            class="image"
-          />
-          <div class="image-overlay">
-            <h3 class="image-title">{{ image.title }}</h3>
+      <div class="row justify-content-center">
+        <div class="col-7 video-container">
+          <video width="100%" ref="videoPlayer" autoplay loop>
+            <source :src="selectedVideo" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="col-2 images-container">
+          <div
+            v-for="(image, index) in images"
+            :key="index"
+            class="image-card"
+            @click="selectVideo(index)"
+            :class="{ 'active-image': selectedImage === index }"
+          >
+            <img
+              :src="image.src"
+              class="image"
+            />
+            <div class="image-overlay">
+              <h3 class="image-title">{{ image.title }}</h3>
+            </div>
           </div>
         </div>
       </div>
@@ -67,25 +73,43 @@ export default {
 </script>
 
 <style scoped>
+
 .video-container video {
   border-radius: 20px;
-  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  height: 100%;
 }
-
+.title{
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 31.2px;
+  text-align: center;
+  color: #ffc107;
+  margin-bottom: 16px;
+}
+.subtitle{
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.6px;
+  text-align: center;
+  color: #fff;
+}
 .images-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  border-radius: 20px;
+  justify-content: space-between;
   background:#FFFFFF0A;
   border: 1px solid #3F3F3F;
   backdrop-filter: blur(2px);
   border-radius: 20px;
   padding: 10px;
-  gap: 10px;
+  margin: 30px 0;
 }
-
 .image-card {
   position: relative;
   margin: 15px;

@@ -1,5 +1,5 @@
 <template>
-<div class="container p-3 mb-5">
+<div class="container-fluid p-3 mb-5">
   <div class="box-productivity">
     <div class="card-productivity" v-for="(beneficio, index) in beneficios" :key="index">
       <div class="title">{{ beneficio.title }}</div>

@@ -1,12 +1,12 @@
 <template>
-  <div class="container testimonial-slider">
+  <div class="container-custon testimonial-slider">
     <div class="slides text-white" :style="slideStyle">
       <div v-for="(testimonial, index) in infiniteTestimonials" :key="index" class="slide"
         :class="{ 'highlighted-slide': (index) === currentIndex }">
-        <div class="slide-content">
+        <div class="content">
           "{{ testimonial.text }}"
         </div>
-        <div class="slide-author">
+        <div class="author">
           <span class="author-name">{{ testimonial.author }}</span>
         </div>
       </div>
@@ -33,7 +33,7 @@ export default {
       testimonials: [
         {
           text: "Estamos muito entusiasmados com o potencial da plataforma da Freedom. Embora ainda estejamos na fase inicial de testes, já percebemos como ela pode ser um divisor de águas para nossa operação. A centralização de múltiplas IAs em uma interface simples e acessível é algo realmente inovador. A facilidade de integração e a forma como ela torna acessível a criação de conteúdo e automação de processos nos dá uma visão clara de como isso pode ser amplamente implementado na nossa empresa no futuro.",
-          author: "Juliano Trisca, Regional VP slack sales",
+          author: "Juliano Triska, Regional VP slack sales",
         },
         {
           text: "Testar a plataforma da Freedom nos abriu os olhos para o que pode ser o futuro das nossas operações. Ainda estamos avaliando como implementar isso a longo prazo, mas já conseguimos ver o quão inovadora é a proposta. A Freedom simplifica o uso das tecnologias mais recentes e oferece um ambiente intuitivo para qualquer pessoa, independentemente do nível técnico, criar conteúdo de alta qualidade. É definitivamente uma solução que estamos considerando para o próximo passo em nossa empresa.",
@@ -41,7 +41,7 @@ export default {
         },
         {
           text: "Estamos muito entusiasmados com o potencial da plataforma da Freedom. Embora ainda estejamos na fase inicial de testes, já percebemos como ela pode ser um divisor de águas para nossa operação. A centralização de múltiplas IAs em uma interface simples e acessível é algo realmente inovador. A facilidade de integração e a forma como ela torna acessível a criação de conteúdo e automação de processos nos dá uma visão clara de como isso pode ser amplamente implementado na nossa empresa no futuro.",
-          author: "Juliano Trisca, Regional VP slack sales",
+          author: "Juliano Triska, Regional VP slack sales",
         }
       ]
     };
@@ -52,7 +52,7 @@ export default {
     },
     slideStyle() {
       return {
-        transform: `translateX(${(this.currentIndex - 1) * -594}px)`, // Adjust based on the current index
+        transform: `translateX(${(this.currentIndex - 1) * -33}%)`, // Adjust based on the current index
         transition: 'transform 0.5s ease-in-out'
       };
     }
@@ -83,9 +83,13 @@ export default {
 </script>
 
 <style scoped>
+.container-custon {
+  width: 100vw;
+}
 .testimonial-slider {
   position: relative;
-  margin: auto;
+  margin: 0;
+  width: 130%;
   overflow: hidden;
   margin: 140px 0px;
 }
@@ -93,6 +97,7 @@ export default {
 .slides {
   display: flex;
   justify-content: center;
+  width: 120vw;
 }
 
 .slide {
@@ -142,11 +147,11 @@ export default {
 }
 
 .prev-btn {
-  left: 25%;
+  left: 31%;
 }
 
 .next-btn {
-  right: 25%;
+  right: 34.3%;
 }
 
 .span-slide span {
@@ -154,17 +159,15 @@ export default {
   text-align: center;
 }
 
-.slide-content {
-  font-family: Open Sans;
+.content {
   font-size: 23.77px;
-  font-style: italic;
+  font-style: italic !important;
   font-weight: 400;
   line-height: 30.9px;
   text-align: left;
   margin-bottom: 42px;
 }
-.slide-author {
-  font-family: Open Sans;
+.author {
   font-size: 23.77px;
   font-weight: 700;
   line-height: 30.9px;

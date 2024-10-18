@@ -1,7 +1,7 @@
 <template>
-  <div class="text-white bg-transparent py-4 fixed-top bg-gradient">
+  <div class="container-fluid text-white bg-transparent py-4 fixed-top bg-gradient">
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-      <div class="container">
+      <div class="container-fluid">
         <router-link class="navbar-brand fs-4 fw-bold" to="/">
           <img src="../assets/images/logo.png" alt="Logo" height="24" class="d-inline-block align-text-top">
         </router-link>
@@ -31,6 +31,9 @@
 </script>
 
 <style scoped>
+.container-fluid{
+  margin: 0 !important;
+}
 .bg-gradient {
   backdrop-filter: blur(2px);
   background: linear-gradient(180deg, rgba(179, 179, 179, 0.54) 0%, rgba(39, 39, 39, 0.45) 73.4%, rgba(0, 0, 0, 0.09) 100%),
