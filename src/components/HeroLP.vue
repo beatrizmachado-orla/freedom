@@ -26,7 +26,6 @@ const solicitarPrototipo = () => {
 
 <style scoped>
 .text-hero {
-  font-family: 'Raleway', sans-serif;
   font-size: 1rem;
 }
 .herolp {

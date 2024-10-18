@@ -31,10 +31,13 @@ import testes from './components/testes.vue';
 
 <style scoped>
 .info {
-  background-image: url("./assets/images/background.png");
-  background-position: center right;
+  background-image:
+    url("./assets/images/bg/Gradiente.png"),
+    url("./assets/images/bg/Verde.png"),
+    url("./assets/images/bg/Amarelo.png");
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   align-items: center;
   justify-content: center;
   display: flex;

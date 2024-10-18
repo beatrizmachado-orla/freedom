@@ -4,7 +4,7 @@
       <div class="accordion-item" v-for="(faq, index) in faqs" :key="index">
         <h2 class="accordion-header d-flex justify-content-between align-items-center">
           <span class="accordion-title">{{ faq.pergunta }}</span>
-          <button class="accordion-button collapsed custom-button" type="button" 
+          <button class="collapsed custom-button" type="button" 
             data-bs-toggle="collapse" 
             :data-bs-target="'#collapse' + index" 
             :aria-controls="'collapse' + index">
@@ -63,14 +63,39 @@ export default {
 }
 
 .custom-button {
-  width: 30px;
-  height: 30px;
-  border-radius: 50% !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   background-color: #F7D11D;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
+  transition: all 0.3s, border 1s;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45%; /* Ajuste o tamanho do SVG dentro do botão */
+}
+
+.custom-button::after {
+  color: #F7D11D; /* Cor da seta quando aberto */
+  font-size: 20px; /* Ajuste o tamanho da seta */
+}
+
+.custom-button.collapsed::after {
+  color: #000000; /* Cor da seta quando fechado */
+  font-size: 20px; /* Tamanho da seta quando colapsado */
+}
+.custom-button.collapsed{
+  background-image: url('/src/assets/images/arrow-black.svg');
+}
+
+
+.custom-button:not(.collapsed) {
+  background-image: url('/src/assets/images/arrow-amarelo.svg');
+  background-color: transparent;
+  border: 2px solid #F7D11D;
 }
 
 .custom-accordion .accordion-button {
@@ -86,7 +111,6 @@ export default {
 .custom-accordion .accordion-button:focus {
   box-shadow: none;
 }
-
 .custom-body {
   color: #fff;
 }
@@ -98,4 +122,5 @@ export default {
   text-align: left;
   color: #F7D11D;
 }
+
 </style>

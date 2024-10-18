@@ -43,7 +43,6 @@ const solicitarPrototipo = () => {
   font-size: 56px;
 }
 .subtitle{
-  font-family: Raleway;
   font-size: 18px;
   font-weight: 500;
   line-height: 25.2px;
