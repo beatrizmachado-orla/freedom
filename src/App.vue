@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <script setup>
 import HeaderLP from './components/HeaderLP.vue'
 import HeroLP from './components/HeroLP.vue'
@@ -49,31 +48,3 @@ import testes from './components/testes.vue';
   color: #ffffff !important;
 }
 </style>
-=======
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
->>>>>>> 8e6e933dd91d5d70e2a37bca3048ad060ba139bc
