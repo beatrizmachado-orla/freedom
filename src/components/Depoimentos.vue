@@ -173,4 +173,5 @@ export default {
   line-height: 30.9px;
   text-align: left;
 }
+
 </style>
