@@ -114,6 +114,9 @@ export default {
   border: 1px solid #3F3F3F;
   backdrop-filter: blur(2px);
   transition: transform 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .highlighted-slide {

@@ -10,6 +10,7 @@ import Produtividade from './components/Produtividade.vue';
 import Consultoria from './components/Consultoria.vue';
 import Depoimentos from './components/Depoimentos.vue';
 import Faq from './components/Faq.vue';
+import Form from './components/Form.vue';
 import testes from './components/testes.vue';
 </script>
 
@@ -25,6 +26,7 @@ import testes from './components/testes.vue';
     <Consultoria/>
     <Depoimentos/>
     <Faq/>
+    <Form/>
   </div>
   <FooterLP/>
 </template>
@@ -42,7 +44,7 @@ import testes from './components/testes.vue';
   justify-content: center;
   display: flex;
   flex-direction: column;
-  padding: 3rem;
+  padding: 3rem 3rem 0 3rem;
 }
 .navbar-nav .nav-link:hover {
   color: #ffffff !important;
