@@ -14,10 +14,10 @@
               <a class="nav-link text-warning" href="#about">Sobre nós</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-warning" href="#services">Serviços</a>
+              <a class="nav-link text-warning" href="#products">Serviços</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-warning" href="#benefits">Benefícios</a>            
+              <a class="nav-link text-warning" href="#produtividade">Benefícios</a>            
             </li>
           </ul>
         </div>
