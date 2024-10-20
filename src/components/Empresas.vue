@@ -20,27 +20,27 @@ export default {
     return {
       empresas: [
         {
-          src: "src/assets/images/itauLogo.png",
+          src: ".../assets/images/itauLogo.png",
           title: "Itau",
         },
         {
-          src: "src/assets/images/claroLogo.png",
+          src: ".../assets/images/claroLogo.png",
           title: "Claro",
         },
         {
-          src: "src/assets/images/globoLogo.png",
+          src: ".../assets/images/globoLogo.png",
           title: "Globo",
         },
         {
-          src: "src/assets/images/nubankLogo.png",
+          src: ".../assets/images/nubankLogo.png",
           title: "Nubank",
         },
         {
-          src: "src/assets/images/sabespLogo.png",
+          src: ".../assets/images/sabespLogo.png",
           title: "Sabesp",
         },
         {
-          src: "src/assets/images/unimedLogo.png",
+          src: ".../assets/images/unimedLogo.png",
           title: "Unimed",
         },
       ],
